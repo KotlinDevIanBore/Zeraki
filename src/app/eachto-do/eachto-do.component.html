@@ -1,0 +1,9 @@
+<div class="todo-list-container">
+    <p>Remember to</p>
+    <ul class="todo-list">
+      <li *ngFor="let eachtodo of todoArray;let i = index" class="todo-list-item">
+        <span class="todo-list-item-text">{{ eachtodo }}</span>
+        <button (click)="removeItem(i)" >-</button>
+      </li>
+    </ul>
+  </div>

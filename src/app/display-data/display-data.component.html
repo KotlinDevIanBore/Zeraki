@@ -1,0 +1,14 @@
+<p>Display Data component Functions</p>
+
+<form>
+  <input placeholder="Sort by category e.g. Electronics">
+  <button (click)="sortProductsByCategory()">Sort</button>
+</form>
+
+<ul *ngFor="let product of products">
+  <li>{{product.category}}</li>
+  <li>{{product.title}}</li>
+  <li>{{product.price}}</li>
+  <li>{{product.description}}</li>
+  <img [src]="product.image">
+</ul>

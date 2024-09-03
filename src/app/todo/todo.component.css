@@ -1,0 +1,14 @@
+.title {
+    font-size: 24px;
+  }
+  
+  .form-input {
+    padding: 5px;
+    border: 1px solid #000;
+  }
+  
+  .button {
+    padding: 5px;
+    border: none;
+    background-color: #ccc;
+  }

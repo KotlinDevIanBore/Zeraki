@@ -1,0 +1,11 @@
+<p class="title">Welcome to Your To Do List</p>
+
+<form (ngSubmit)="addTodo()">
+  <input class="form-input" placeholder="Add Your To Do Here" type="text" name="name" [(ngModel)]="todoName" /><br /><br />
+  <button class="button" type="submit">Add to Do</button>
+</form>
+
+<p class="title">Your ToDos</p>
+
+<app-eachto-do [todoArray]="todoList" (removeItemEvent)="onRemoveItem($event)"></app-eachto-do>
+
